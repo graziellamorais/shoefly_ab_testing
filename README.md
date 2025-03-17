@@ -6,9 +6,12 @@ This project analyzes an A/B test conducted to compare the effectiveness of two 
 ---
 
 ## 📂 **Project Structure**  
-├── ad_clicks.csv # Dataset containing user interactions with ads
-├── ad_click_analysis.ipynb # Jupyter Notebook with the analysis code
-├── README.md # Project documentation
+├── ad_clicks.csv # Dataset containing user interactions with ads  
+
+├── ad_click_analysis.ipynb # Jupyter Notebook with the analysis code  
+
+├── README.md # Project documentation  
+
 
 
 ---
