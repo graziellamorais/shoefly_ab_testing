@@ -80,10 +80,10 @@ clicks_by_day_A_pivot['percent_clicked'] = (clicks_by_day_A_pivot[True] /
 print(clicks_by_day_A_pivot)
 
 # Filter for group B
-a_clicks = ad_clicks[ad_clicks.experimental_group == 'B']
+b_clicks = ad_clicks[ad_clicks.experimental_group == 'B']
 
 # Group by 'day' and 'is_click', then count 'user_id'
-clicks_by_day_B = a_clicks.groupby(['day', 'is_click']).user_id.count().reset_index()
+clicks_by_day_B = b_clicks.groupby(['day', 'is_click']).user_id.count().reset_index()
 
 # Create a pivot table
 clicks_by_day_B_pivot = clicks_by_day_B.pivot(index='day', columns='is_click', values='user_id').fillna(0).reset_index()
